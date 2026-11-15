@@ -25,7 +25,7 @@
 
 ## 고등학교 미디어 리터러시 자료 공개
 
-공통 기본안과 고1·고2·고3 심화안을 공개합니다. 각 과정은 운영안·16차시 지도안·학생 활동지·평가 루브릭으로 구성됩니다.
+공통 기본안과 고1·고2·고3 심화안을 공개합니다. 각 과정은 운영안·16차시 지도안·학생 활동지·평가 루브릭으로 구성됩니다. 본 자료는 2022 개정 교육과정 기반의 개발·활용 제안이며, 교육부 승인 또는 외부 전문가 검증 완료를 의미하지 않습니다. 학교·교과·학습자 맥락에 맞게 검토·조정해 활용해야 합니다.
 
 - [고등학교 공통 기본안 운영안](resources/high-school/high_school_common_course_plan.md) · [지도안](resources/high-school/high_school_common_lesson_plans.md) · [활동지](resources/high-school/high_school_common_worksheets.md) · [루브릭](resources/high-school/high_school_common_rubrics.md)
 - [고등학교 1학년 운영안](resources/high-school/high_school_grade1_course_plan.md) · [지도안](resources/high-school/high_school_grade1_lesson_plans.md) · [활동지](resources/high-school/high_school_grade1_worksheets.md) · [루브릭](resources/high-school/high_school_grade1_rubrics.md)
