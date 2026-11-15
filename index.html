@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="검토와 공개 승인을 거친 미디어 리터러시 교육 자료를 제공하는 자료실입니다.">
+<title>미디어 리터러시 교육 자료실</title>
+<style>
+:root{color-scheme:light;--ink:#172033;--muted:#64748b;--line:#e2e8f0;--paper:#f8fafc;--accent:#2457a7}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans KR",sans-serif;line-height:1.65}
+header{background:#102746;color:white;padding:54px 22px 46px} .wrap{max-width:1000px;margin:auto}
+.kicker{font-size:.82rem;letter-spacing:.12em;color:#b8d2f5;font-weight:700}
+h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.2;margin:12px 0}
+header p{max-width:680px;color:#d9e6f7;margin:0;font-size:1.05rem}
+main{padding:34px 22px 70px}.notice{background:#eef4ff;border:1px solid #cbdcf7;border-radius:14px;padding:18px 20px;margin-bottom:28px}
+.notice strong{display:block;margin-bottom:4px}.notice p{margin:0;color:#40536e}
+.tools{display:flex;gap:12px;align-items:center;margin:22px 0 18px;flex-wrap:wrap}
+input{flex:1;min-width:230px;padding:13px 15px;border:1px solid #cbd5e1;border-radius:10px;font:inherit;background:white}
+.count{font-size:.9rem;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:white;border:1px solid var(--line);border-radius:14px;padding:20px;min-height:155px}
+.card h2{font-size:1.12rem;margin:0 0 8px}.card p{color:var(--muted);font-size:.94rem;margin:0}
+.tag{display:inline-block;font-size:.75rem;color:#315b91;background:#edf4ff;padding:3px 9px;border-radius:99px;margin-bottom:10px}
+.empty{padding:30px;text-align:center;color:var(--muted);border:1px dashed #cbd5e1;border-radius:14px;background:white}
+footer{border-top:1px solid var(--line);padding:22px;color:var(--muted);font-size:.86rem;text-align:center}
+a{color:inherit}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="kicker">OPEN EDUCATION RESOURCE</div><h1>미디어 리터러시<br>교육 자료실</h1><p>수업에서 활용할 수 있도록 검토하고 공개 승인한 교육 자료를 모아 제공하는 공간입니다.</p></div></header>
+<main class="wrap">
+<section class="notice"><strong>자료 공개 준비 중</strong><p>현재 자료실의 기본 구조를 마련했습니다. 연구 과정의 원자료와 내부 검토 기록은 공개하지 않으며, 별도 검토와 공개 승인을 마친 자료만 이곳에 게시합니다.</p></section>
+<div class="tools"><input id="search" type="search" placeholder="자료명 또는 주제로 검색" aria-label="자료 검색"><span class="count" id="count">공개 자료 0건</span></div>
+<section class="grid" id="cards" aria-label="자료 분류">
+<article class="card" data-search="수업 개요 수업 목표 교육과정"><span class="tag">01 · 수업 설계</span><h2>수업 개요 및 설계</h2><p>수업의 목적, 핵심 질문, 학습 목표와 전체 구성을 정리한 자료</p></article>
+<article class="card" data-search="수업 계획 차시 운영 교육과정"><span class="tag">02 · 수업 계획</span><h2>차시별 수업 계획</h2><p>차시 흐름과 학습 활동, 교수·학습 운영 계획</p></article>
+<article class="card" data-search="수업 지도안 가네 9가지 수업사태"><span class="tag">03 · 수업 지도안</span><h2>수업 지도안</h2><p>가네의 9가지 수업사태를 활용한 교수·학습 과정안</p></article>
+<article class="card" data-search="활동지 학습지 학생 자료"><span class="tag">04 · 학습 자료</span><h2>학생 활동 자료</h2><p>수업 활동지와 학습자용 참고 자료</p></article>
+<article class="card" data-search="평가 루브릭 성취기준"><span class="tag">05 · 평가</span><h2>평가 및 루브릭</h2><p>학습 목표와 연계한 평가 기준 및 루브릭</p></article>
+</section>
+<p id="no-result" class="empty" hidden>검색어와 일치하는 분류가 없습니다.</p>
+</main>
+<footer><div class="wrap">본 자료실은 공개 승인된 교육 자료만 제공합니다. 내부 연구 자료 및 검토 기록은 별도 비공개 저장소에서 관리합니다.</div></footer>
+<script>
+const search=document.getElementById('search'),cards=[...document.querySelectorAll('.card')],count=document.getElementById('count'),empty=document.getElementById('no-result');
+function filter(){const q=search.value.trim().toLocaleLowerCase();let n=0;for(const card of cards){const show=(card.dataset.search+' '+card.innerText).toLocaleLowerCase().includes(q);card.hidden=!show;if(show)n++}count.textContent='분류 '+n+'개';empty.hidden=n!==0}
+search.addEventListener('input',filter);filter();
+</script>
+</body></html>
