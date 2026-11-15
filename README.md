@@ -21,3 +21,16 @@
 
 ## 버전
 - 0.3.0 — 전 생애·전 계층 교육체계 소개 추가(학교·평생교육·장애인·다문화), 포용·접근성 원칙 명시
+
+
+## 고등학교 미디어 리터러시 자료 공개
+
+공통 기본안과 고1·고2·고3 심화안을 공개합니다. 각 과정은 운영안·16차시 지도안·학생 활동지·평가 루브릭으로 구성됩니다.
+
+- [고등학교 공통 기본안 운영안](resources/high-school/high_school_common_course_plan.md) · [지도안](resources/high-school/high_school_common_lesson_plans.md) · [활동지](resources/high-school/high_school_common_worksheets.md) · [루브릭](resources/high-school/high_school_common_rubrics.md)
+- [고등학교 1학년 운영안](resources/high-school/high_school_grade1_course_plan.md) · [지도안](resources/high-school/high_school_grade1_lesson_plans.md) · [활동지](resources/high-school/high_school_grade1_worksheets.md) · [루브릭](resources/high-school/high_school_grade1_rubrics.md)
+- [고등학교 2학년 운영안](resources/high-school/high_school_grade2_course_plan.md) · [지도안](resources/high-school/high_school_grade2_lesson_plans.md) · [활동지](resources/high-school/high_school_grade2_worksheets.md) · [루브릭](resources/high-school/high_school_grade2_rubrics.md)
+- [고등학교 3학년 운영안](resources/high-school/high_school_grade3_course_plan.md) · [지도안](resources/high-school/high_school_grade3_lesson_plans.md) · [활동지](resources/high-school/high_school_grade3_worksheets.md) · [루브릭](resources/high-school/high_school_grade3_rubrics.md)
+
+## 버전
+- 0.4.0 — 고등학교 공통·학년별 16차시 자료 공개 및 자료실 연결
